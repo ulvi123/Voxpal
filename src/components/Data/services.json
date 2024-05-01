@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name1": "AI English Tutor",
+        "name2": "Your 24/7 Speaking Guide",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/01.svg"
+    },
+    {
+        "id": 2,
+        "name1": "Customer Service",
+        "name2": "Wizard(coming soon)",
+        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/02.svg"
+    },
+    {
+        "id": 3,
+        "name1": "Sales Agent",
+        "name2": "for every business(coming soon)",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./",
+        "image": "./services/03.svg"
+    },
+    {
+        "id": 4,
+        "name1": "Technical Interviewer",
+        "name2": "for developers(coming soon)",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/04.svg"
+    },
+    {
+        "id": 5,
+        "name1": "Business English",
+        "name2": "Buddy(coming soon)",
+        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/05.svg"
+    },
+    {
+        "id": 6,
+        "name1": "Public Speaking ",
+        "name2": "Simulator(coming soon)",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./",
+        "image": "./services/06.svg"
+    }
+]
