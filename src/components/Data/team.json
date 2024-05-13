@@ -6,21 +6,21 @@
             "name": "Ulvi Nasibli",
             "description": "5+ years of experience in developing software. Expertise in front-end,backend and customer relations",
             "profile": "/team/c1.png",
-            "link": "/"
+            "link": "https://www.linkedin.com/in/ulvi-nasibli-414411122/"
         },
         {
             "title": "Co-founder and Software Engineer",
             "name": "Chingiz Huseynzade",
             "description": "7+ years of experience in mobile app development. Building and deploying products that people love",
             "profile": "/team/c2.png",
-            "link": "/"
+            "link": "https://www.linkedin.com/in/chingizhuseynzade/"
         },
         {
             "title": "Sales and Marketing Manager",
             "name": "Kanan Hasanov",
             "description": "10+ years of experience in market research and digital marketing. Loves to ask correct questions and deliver right",
             "profile": "/team/c3.png",
-            "link": "/"
+            "link": "https://www.linkedin.com/in/kanan-hasanov/"
         }
 
     ],
@@ -31,8 +31,8 @@
             "hid": "accordion-open-heading-1",
             "bid": "accordion-open-body-1",
             "target": "#accordion-open-body-1",
-            "title": "Download and Setup",
-            "description": "You can download the app and set up your profile. During this process, you'll undergo an initial assessment where the system evaluates your current English speaking skills and understands your learning goals."
+            "title": "First step",
+            "description": "By simply using your browser, you can access the platform. During this process, you'll undergo an initial assessment where the system will ask you questions to assess your skills and understands your learning goals."
         },
         {
             "id": "02",

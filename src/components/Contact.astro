@@ -8,12 +8,12 @@ import Container from "./Container.astro";
   <div class='relative flex flex-col items-center md:flex-row'>
     <div class='row items-center py-5 md:pr-16 md:w-4/12 md:py-10'>
       <div class='text-center md:text-left space-y-3 bg-lime'>
-        <h2 class='text-4xl font-medium leading-none sm:text-6xl'>Pre-sales</h2>
+        <h2 class='text-4xl font-medium leading-none sm:text-6xl'>Beta Launch</h2>
       </div>
     </div>
     <div class='flex items-center py-5 md:w-8/12 md:py-10'>
-      <p class='text-xl font-normal leading-7 text-center md:text-left'>
-        Connect with Us: Let's Discuss Your language Needs
+      <p class='text-2xl font-normal leading-7 text-center md:text-left'>
+        Dont waste time waiting and  grab the beta launch <strong>discount until May 27th</strong>
       </p>
     </div>
   </div>
@@ -23,49 +23,22 @@ import Container from "./Container.astro";
   <div
     class='relative flex flex-col items-center md:flex-row my-6 bg-zinc-100 rounded-[45px]'>
     <div class='row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10'>
-      <form action='#' class='space-y-8 md:w-full' id='form-data'>
+      <form name="contact" method="POST" data-netlify="true" class="space-y-8 md:w-full" id="form-data">
+        <input type="hidden" name="form-name" value="contact">
         <div>
-          <label for='name' class='block mb-2 text-base font-medium text-black'
-            >Name</label
-          >
-          <input
-            type='text'
-            id='name'
-            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
-            placeholder='Name'
-            required
-          />
+          <label for="name" class="block mb-2 text-base font-medium text-black">Name</label>
+          <input type="text" id="name" name="name" class="shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5" placeholder="Name" required>
         </div>
         <div>
-          <label for='email' class='block mb-2 text-base font-medium text-black'
-            >Email</label
-          >
-          <input
-            type='text'
-            id='email'
-            class='block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black'
-            placeholder='Email'
-            required
-          />
+          <label for="email" class="block mb-2 text-base font-medium text-black">Email</label>
+          <input type="text" id="email" name="email" class="block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black" placeholder="Email" required>
         </div>
-        <div class='sm:col-span-2'>
-          <label
-            for='message'
-            class='block mb-2 text-base font-medium text-black dark:text-gray-400'
-            >Message</label
-          >
-          <textarea
-            id='message'
-            rows='6'
-            class='block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black'
-            placeholder='Message'></textarea>
+        <div class="sm:col-span-2">
+          <label for="message" class="block mb-2 text-base font-medium text-black dark:text-gray-400">Message</label>
+          <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black" placeholder="Message"></textarea>
         </div>
-        <button
-          type='submit'
-          class='w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex'>
-          <div class='text-center text-white text-xl font-normal leading-7'>
-            Send Message
-          </div>
+        <button type="submit" class="w-full py-5 bg-zinc-900 rounded-[14px] justify-center gap-2.5 inline-flex">
+          <div class="text-center text-white text-xl font-normal leading-7">Send Message</div>
         </button>
       </form>
 
