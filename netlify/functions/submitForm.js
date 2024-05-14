@@ -1,13 +1,15 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import FormSubmission from "../model/formSubmission.js";
+import FormSubmission from "./formSubmission.js";
 
 dotenv.config();
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log("MongoDB connected"))
+    .catch(err => console.error("MongoDB connection error:", err));
 
-exports.handler = async (event, context) => {
+const handler = async (event, context) => {
     // Check if the request method is POST
     if (event.httpMethod !== "POST") {
         return {
@@ -31,15 +33,17 @@ exports.handler = async (event, context) => {
         // Return a successful response
         return {
             statusCode: 200,
-            body: "Form submitted successfully"
+            body: JSON.stringify({ message: "Form submitted successfully" })
         };
     } catch (error) {
-        console.log("Error submitting the form:", error.message);
+        console.error("Error submitting the form:", error);
 
         // Return an error response
         return {
             statusCode: 500,
-            body: "Error submitting the form"
+            body: JSON.stringify({ error: "Error submitting the form", details: error.message })
         };
     }
 };
+
+export { handler };
